@@ -3,7 +3,7 @@ import { populateCalendar, updateCountdown } from './calendar.js';
 
 const ram = navigator.deviceMemory;
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)').matches;
-const isSmallScreen = window.innerWidth < 500;
+const isSmallScreen = window.innerWidth < 375;
 
 // Only apply low-effects if RAM is known and low, or other conditions are true
 const isLowEnd =
@@ -21,7 +21,8 @@ if (isLowEnd) {
 
 const starContainer = document.querySelector('.stars');
 const snowContainer = document.querySelector('.snowflakes');
-const confettiCanvas = setupConfettiCanvas();
+export let confettiCanvas = null;
+
 
 renderStars(starContainer);
 renderSnowflakes(snowContainer);

@@ -1,5 +1,7 @@
 import { gifts } from './data.js';
 import { formatTime, isBetween } from './utils.js';
+import { setupConfettiCanvas } from './scene.js';
+import { confettiCanvas } from './main.js';
 
 export function createBox(day, now, currentYear, confettiCanvas) {
   const box = document.createElement('div');
@@ -82,16 +84,22 @@ export function createBox(day, now, currentYear, confettiCanvas) {
     }
 
     const modal = document.querySelector('.gift-modal');
-    modal.classList.remove('hidden');
-    modal.querySelector('.gift-modal-content').classList.remove('animate'); // reset animation
+    const modalContent = modal.querySelector('.gift-modal-content');
 
-    setTimeout(() => {
+    requestAnimationFrame(() => {
+      modal.classList.remove('hidden');
+      modalContent.classList.remove('animate');
       modal.querySelector('.gift-title').textContent = `🎁 Day ${day}`;
       modal.querySelector('.gift-content').innerHTML = content;
-      modal.querySelector('.gift-modal-content').classList.add('animate'); // trigger animation
-    }, 50);
+      modalContent.classList.add('animate');
+    });
+
 
     if (now >= unlockTime && now < lockTime) {
+      if (!confettiCanvas) {
+        confettiCanvas = setupConfettiCanvas();
+      }
+
       confetti.create(confettiCanvas, { resize: true })({
         particleCount: 100,
         spread: 70,
