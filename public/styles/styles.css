@@ -4,10 +4,8 @@ body, html {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-  background: radial-gradient(ellipse at bottom, #0a0a1f 0%, #000 100%);
+  background-color: #0a0a1f; /* fallback only */
   font-family: sans-serif;
-  background-attachment: fixed;
 }
 
 .scene {
@@ -15,6 +13,7 @@ body, html {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* Moon */
@@ -767,11 +766,6 @@ body, html {
 }
 
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 
 @keyframes pulseGlow {
   0%, 100% {
@@ -915,4 +909,37 @@ body.low-effects .gift-modal-content.animate {
   transform: scale(1) !important;
 }
 
+body.low-effects .gift-modal-content.animate {
+  animation: fadeIn 0.3s ease-out !important;
+  transform: none !important;
+}
+
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0a0a1f 0%, #000 100%);
+  z-index: -1; /* Make sure it's behind everything */
+  pointer-events: none;
+}
+
+
+body.low-effects .aurora-layer,
+body.low-effects .aurora-layer.secondary {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-layer,
+  .aurora-layer.secondary {
+    display: none;
+  }
+
+  .background-layer {
+    display: block;
+  }
+}
 
