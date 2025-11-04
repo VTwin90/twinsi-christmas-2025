@@ -35,8 +35,9 @@ export function createBox(day, now, currentYear, confettiCanvas) {
 
   const gift = gifts[day - 1];
   box.addEventListener('pointerdown', () => {
-    if (box.classList.contains('locked') || box.classList.contains('opened')) return;
+    if (box.classList.contains('locked')) return;
 
+    const isFirstOpen = !box.classList.contains('opened');
     box.classList.add('opened');
 
     let content = '';
