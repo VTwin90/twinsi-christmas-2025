@@ -61,6 +61,13 @@ export const gifts = [
 
 > ⚠️ On older mobile devices (like iPhone 6s), performance may be slower. For best experience, use a desktop browser or newer phone.
 
+<br>
+
+### 🧭 Favicon & Manifest Notes
+
+I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon set and [their checker](https://realfavicongenerator.net/favicon-checker) to validate it.
+
+ > ⚠️ The favicon checker may report missing icons (e.g. `192x192`, `512x512`) when hosted on GitHub Pages due to subpath hosting (`/twinsi-christmas-2025/`). These are false negatives — all icons are correctly linked and verified via Chrome DevTools and direct access.
 
 <br>
 
