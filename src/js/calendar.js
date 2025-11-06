@@ -137,8 +137,13 @@ export function populateCalendar(now, currentYear, confettiCanvas) {
   }
 }
 
+function isChristmasEve(date) {
+  return date.getDate() === 24 && date.getMonth() === 11;
+}
+
 export function updateCountdown(now, currentYear) {
   const countdownEl = document.getElementById('countdown');
+  const countdownPrefix = document.getElementById('countdown-prefix');
   const countdownWrapper = document.querySelector('.countdown-timer');
   const calendarStart = new Date(currentYear, 11, 1, 0, 0);
 
@@ -146,10 +151,12 @@ export function updateCountdown(now, currentYear) {
     countdownWrapper.style.display = 'none';
     return;
   }
-  if (now.getDate() >= 24 && now.getMonth() === 11) {
+  if (isChristmasEve(now)) {
+    countdownPrefix.textContent = '';
     countdownEl.textContent = '🎄 Merry Christmas!';
     return;
   }
+
 
   const nextUnlock = new Date(now);
   nextUnlock.setDate(now.getDate() + 1);
@@ -157,15 +164,11 @@ export function updateCountdown(now, currentYear) {
 
   const diff = nextUnlock - now;
 
-  if (diff <= 0) {
-    countdownEl.textContent = '🎁 Today\'s gift is ready!';
-    return;
-  }
-
   const totalSeconds = Math.floor(diff / 1000);
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
 
+  countdownPrefix.textContent = 'New 🎁 in: ';
   countdownEl.textContent = formatTime(totalSeconds);
 }

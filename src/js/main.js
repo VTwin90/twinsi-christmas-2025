@@ -25,7 +25,7 @@ renderStars(starContainer);
 renderSnowflakes(snowContainer);
 
 const currentYear = new Date().getFullYear();
-const now = new Date(currentYear, 11, 5, 23, 59); // Dec 1, 23:59
+const now = new Date(currentYear, 11, 23, 23, 59); // Dec 1, 23:59
 
 
 // Initial render
@@ -37,7 +37,7 @@ updateCountdown(now, currentYear);
 let lastDay = now.getDate();
 let lastMinute = now.getMinutes();
 
-setInterval(() => {
+const intervalId = setInterval(() => {
   now.setSeconds(now.getSeconds() + 1);
   updateCountdown(now, currentYear);
 
@@ -52,8 +52,13 @@ setInterval(() => {
   }
 
   console.log('time:', now.toLocaleString());
-}, 1000);
 
+  // Stop ticking after Dec 24
+  if (now.getDate() >= 24 && now.getMonth() === 11) {
+    clearInterval(intervalId);
+    console.log('🎄 Countdown stopped');
+  }
+}, 1000);
 
 
 // Modal close handler
