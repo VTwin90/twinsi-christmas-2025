@@ -146,6 +146,10 @@ export function updateCountdown(now, currentYear) {
     countdownWrapper.style.display = 'none';
     return;
   }
+  if (now.getDate() >= 24 && now.getMonth() === 11) {
+    countdownEl.textContent = '🎄 Merry Christmas!';
+    return;
+  }
 
   const nextUnlock = new Date(now);
   nextUnlock.setDate(now.getDate() + 1);
