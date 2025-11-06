@@ -1,7 +1,9 @@
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Responsive](https://img.shields.io/badge/Responsive-Design-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-5-orange" />
+  <img src="https://img.shields.io/badge/CSS-3-blue" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" />
+  <img src="https://img.shields.io/badge/Responsive-Design-green" />
+</p>
 
 <br>
 
@@ -21,6 +23,36 @@ A festive, interactive calendar built with vanilla JavaScript, HTML, and CSS —
   </a>
 </p>
 
+<p align="center">
+  <a href="https://vtwin90.github.io/twinsi-christmas-2025/">
+    <img src="https://img.shields.io/badge/🎄 Live Demo -gold?style=for-the-badge" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/VTwin90/twinsi-christmas-2025/fork">
+    <img src="https://img.shields.io/github/forks/VTwin90/twinsi-christmas-2025?style=social" alt="Fork this repo" />
+  </a>
+  <a href="https://github.com/VTwin90/twinsi-christmas-2025/stargazers">
+    <img src="https://img.shields.io/github/stars/VTwin90/twinsi-christmas-2025?style=social" alt="GitHub stars" />
+  </a>
+  <br>
+  <em>If you like this project, give it a star ⭐!</em>
+</p>
+
+<br> 
+
+## 📚 Table of Contents
+- [Features](#features)
+- [What's Inside](#whats-inside)
+- [Customize Your Gifts](#customize-your-gifts)
+- [Device Notes](#device-notes)
+- [Favicon & Manifest Notes](#favicon--manifest-notes)
+- [Getting Started](#getting-started)
+- [License](#license)
+- [Credits](#credits)
+
+<br>
 
 ## ✨ Features
 
@@ -76,16 +108,42 @@ I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the
 To run locally:
 
 ```bash
-git clone https://github.com/your-username/twinsi-christmas-2025.git
+git clone https://github.com/VTwin90/twinsi-christmas-2025.git
 cd twinsi-christmas-2025
 open index.html
+
+# macOS
+open index.html
+
+# Windows
+start index.html
+
+# Linux
+xdg-open index.html
+
 ```
 
 <br>
 
+## 📄 License
+> ⚠️ The MIT License applies only to the source code (HTML, CSS, JavaScript). Creative content is excluded.
+
+This project’s source code is licensed under the [MIT License](LICENSE).  
+Creative content (e.g. music, videos, poems, cards) is not covered by this license and may not be reused without permission.
+
+---
+<br>
+
 <p align="center">
-    🙌 Credits
-    Built by Vanja with holiday spirit ✨
+  <a href="https://vtwin90.github.io/twinsi-christmas-2025/">
+    <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-gold" alt="Made with Love" />
+  </a>
+</p>
+
+<a id="credits"></a>
+<p align="center">
+  🙌 Credits:  
+  Built by Vanja with holiday spirit ✨
 </p>
 
 <p align="center">
