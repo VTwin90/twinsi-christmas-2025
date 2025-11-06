@@ -56,7 +56,7 @@ const intervalId = setInterval(() => {
   // Stop ticking after Dec 24
   if (now.getDate() >= 24 && now.getMonth() === 11) {
     clearInterval(intervalId);
-    console.log('🎄 Countdown stopped');
+    console.log('🎄 Calendar complete. No more updates.');
   }
 }, 1000);
 
