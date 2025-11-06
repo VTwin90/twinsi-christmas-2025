@@ -47,13 +47,14 @@ A festive, interactive calendar built with vanilla JavaScript, HTML, and CSS —
 - [What's Inside](#whats-inside)
 - [Customize Your Gifts](#customize-your-gifts)
 - [Device Notes](#device-notes)
-- [Favicon & Manifest Notes](#favicon--manifest-notes)
+- [Favicon & Manifest Notes](#favicon-manifest-notes)
 - [Getting Started](#getting-started)
 - [License](#license)
 - [Credits](#credits)
 
 <br>
 
+<a id="features"></a>
 ## ✨ Features
 
 - 🎁 Clickable calendar boxes for each day in December, each with a gift
@@ -65,6 +66,7 @@ A festive, interactive calendar built with vanilla JavaScript, HTML, and CSS —
 
 <br>
 
+<a id="whats-inside"></a>
 ## 🎁 What's Inside?
 
 Each day unlocks a unique surprise — it could be music, a video, a game, a card, or something festive you didn’t expect. The fun is in discovering it!
@@ -73,6 +75,7 @@ Each day unlocks a unique surprise — it could be music, a video, a game, a car
 
 <br>
 
+<a id="customize-your-gifts"></a>
 ## 🛠️ Customize Your Gifts
 
 Want to personalize the surprises? You can edit `data.js` to add your own links to music, videos, games, images, or downloads — but we recommend keeping it secret until reveal day!
@@ -89,13 +92,15 @@ export const gifts = [
 
 <br>
 
+<a id="device-notes"></a>
 ## 📱 Device Notes
 
 > ⚠️ On older mobile devices (like iPhone 6s), performance may be slower. For best experience, use a desktop browser or newer phone.
 
 <br>
 
-### 🧭 Favicon & Manifest Notes
+<a id="favicon-manifest-notes"></a>
+## 🧭 Favicon & Manifest Notes
 
 I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the favicon set and [their checker](https://realfavicongenerator.net/favicon-checker) to validate it.
 
@@ -103,6 +108,7 @@ I used [RealFaviconGenerator](https://realfavicongenerator.net/) to generate the
 
 <br>
 
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 To run locally:
@@ -125,7 +131,9 @@ xdg-open index.html
 
 <br>
 
+<a id="license"></a>
 ## 📄 License
+
 > ⚠️ The MIT License applies only to the source code (HTML, CSS, JavaScript). Creative content is excluded.
 
 This project’s source code is licensed under the [MIT License](LICENSE).  
@@ -143,7 +151,14 @@ Creative content (e.g. music, videos, poems, cards) is not covered by this licen
 <a id="credits"></a>
 <p align="center">
   🙌 Credits:  
-  Built by Vanja with holiday spirit ✨
+  Built by Vanja Torp with holiday spirit ✨<br>
+  <em>If you reuse or remix this project, a link back would be appreciated 🎁</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/VTwin90">
+    <img src="https://img.shields.io/badge/Created%20by-Vanja%20Torp-gold?style=for-the-badge" alt="Created by Vanja Torp" />
+  </a>
 </p>
 
 <p align="center">
