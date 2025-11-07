@@ -41,14 +41,14 @@ export const snowflakes = [
 
 export const gifts = [
   { type: 'music', url: 'https://open.spotify.com/playlist/38NJHtg1gq9NDjAc81QiXH' },
-  { type: 'download', url: 'assets/gifts/twinsi_participation_ badge2025.png' },
-  { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },
+  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' },
+  { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'image', url: 'https://yourcdn.com/images/day3.jpg' },
   { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },
   { type: 'download', url: 'https://yourcdn.com/cards/day4.pdf' },
   { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
+  { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'game', url: 'https://yourgame.com/day2' },

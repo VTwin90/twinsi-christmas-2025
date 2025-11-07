@@ -68,23 +68,41 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
-      case 'download':
+      case 'badge':
         content = `
-          <div class="gift-box-content" style="text-align:center; color:white;">
+          <div class="gift-box-content">
             <div class="shiny-badge">
-              <img src="${gift.url}" alt="Participation Badge" class="bobbling-badge"
-                  style="width:160px; max-width:100%; max-height: 100%;" />
+              <img src="${gift.url}" alt="Participation Badge" class="bobbling-badge" />
             </div>
-            <p style="font-size:1.1rem; margin-bottom:1rem;">
+            <p>
               🐾 Twinsi Bear welcomes you to the calendar!  
-              Here’s your badge for joining the adventure — wear it with pride.
+              Here’s your badge for joining the adventure — show it with pride.
             </p>
-            <p style="font-size:1.1rem;">
-              ✨<a href="${gift.url}" download style="color:white; text-decoration:underline;">Download Your Badge</a>
+            <p>
+              ✨<a href="${gift.url}">Download Your Badge</a>
             </p>
           </div>
         `;
         break;
+      
+      case 'card':
+        content = `
+          <div class="gift-box-content">
+            <div class="bobbling-badge">
+              <img src="${gift.url}" alt="Christmas Card" />
+            </div>  
+            <p>
+              🐾 Twinsi Bear is wishing you a Merry Christmas —  
+              may it be full of laughter, love, and twinkling lights. 
+              Share this card with someone who makes your heart smile. 
+            </p>
+            <p>
+              ✨<a href="${gift.url}">Download Your Christmas Card</a>
+            </p>
+          </div>
+        `;
+        break;
+
 
 
   
@@ -92,9 +110,9 @@ export function createBox(day, now, currentYear, confettiCanvas) {
       case 'video':
         content = `
           <div class="gift-box-content">
-            <a href="${gift.url}" target="_blank" class="delayed-link" style="pointer-events:none; display:block; text-align:center;">
+            <a href="${gift.url}" target="_blank" class="delayed-link">
               <img src="https://img.youtube.com/vi/nc3UBeg13fg/hqdefault.jpg" alt="Watch on YouTube" style="width:100%; border-radius:8px;" />
-              <p style="margin-top:0.5rem; font-size:1.2rem;">✨ Watch the Video on YouTube</p>
+              <p>✨ Watch the Video on YouTube</p>
             </a>
           </div>
         `;
