@@ -85,6 +85,24 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
       
+      case 'compliment-challenge':
+        content = `
+          <div class="gift-box-content">
+            <p>
+              🐾 Twinsi Bear’s Compliment Challenge:
+            </p>
+            <p>
+              ✨ Give someone a heartfelt compliment today —  
+              something that makes them feel truly seen.
+            </p>
+            <p>
+              You never know how much a kind word can mean.  
+              Twinsi believes in your sparkle.
+            </p>
+          </div>
+        `;
+        break;
+  
       case 'card':
         content = `
           <div class="gift-box-content">
@@ -103,6 +121,22 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
+      case 'christmas-game':
+      content = `
+        <div class="gift-box-content" style="text-align:center; color:white; padding:1rem; max-width:500px; margin:0 auto;">
+          <p style="font-size:1.2rem; margin-bottom:1rem;">
+            🎄 Twinsi Bear’s Christmas Game!
+          </p>
+          <p style="font-size:1.1rem; margin-bottom:1rem;">
+            Ready for some festive fun?  
+            Twinsi has a little game for you — just click below to play!
+          </p>
+          <p style="font-size:1.1rem;">
+            🎮 <a href="${gift.url}" target="_blank" style="color:white; text-decoration:underline;">Play the Christmas Game</a>
+          </p>
+        </div>
+      `;
+      break;
 
 
   

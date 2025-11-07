@@ -40,16 +40,17 @@ export const snowflakes = [
 ];
 
 export const gifts = [
-  { type: 'music', url: 'https://open.spotify.com/playlist/38NJHtg1gq9NDjAc81QiXH' },
-  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' },
-  { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
+  { type: 'music', url: 'https://open.spotify.com/playlist/38NJHtg1gq9NDjAc81QiXH' }, // Dec 1
+  { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' }, // Dec 2
+  { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' }, // Dec 3
+  { type: 'compliment-challenge', text: 'Give someone a heartfelt compliment today — something that makes them feel truly seen.' }, // Dec 4
+  { type: 'christmas-game', url: 'https://yourgame.com/day2' },
+  
   { type: 'image', url: 'https://yourcdn.com/images/day3.jpg' },
   { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },
   { type: 'download', url: 'https://yourcdn.com/cards/day4.pdf' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'game', url: 'https://yourgame.com/day2' },
   { type: 'game', url: 'https://yourgame.com/day2' },
