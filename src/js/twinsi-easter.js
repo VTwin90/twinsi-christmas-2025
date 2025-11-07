@@ -46,17 +46,21 @@ window.twinsi = {
           modal.classList.remove('hidden');
           modal.querySelector('.gift-title').textContent = "🎁 Twinsi Bear’s Secret Gift";
           modal.querySelector('.gift-content').innerHTML = `
-            <div style="text-align: center; padding: 1rem; font-family: 'Iceberg', sans-serif;">
-              <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #fff;">
-                You've unlocked a hidden surprise just for the most curious coders!
-              </p>
-              <a href="/assets/twinsi-gift.pdf" class="download-link" download
-                style="display: inline-block; margin: 1rem auto; padding: 0.6rem 1.2rem; background: #fff; color: #c62828; border-radius: 6px; text-decoration: none; font-weight: bold; box-shadow: 0 0 6px rgba(255,255,255,0.6);">
-                📥 Download your festive surprise
-              </a>
-              <p style="margin-top: 2rem; font-size: 1rem; color: #fff;">
-                Love, Twinsi 🐻
-              </p>
+             <div class="gift-box-content" style="text-align:center; color:white;">
+                <div class="shiny-badge">
+                  <img src="assets/gifts/secret_gift_twinsi_badge.png" alt="Secret Twinsi Bear Badge" class="bobbling-badge"
+                      style="width:160px; max-width:100%; max-height: 100%;" />
+                </div>
+                <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #fff;">
+                  You've unlocked a hidden surprise just for the most curious coders!
+                </p>  
+                <p style="font-size:1.1rem;">
+                  ✨<a href="assets/gifts/secret_gift_twinsi_badge.png" download style="color:white; text-decoration:underline;">Download Your Secret Gift</a>
+                </p>
+                <p style="margin-top: 2rem; font-size: 1.3rem; color: #fff;">
+                  Love, Twinsi 🐻
+                </p>
+              </div>  
             </div>
           `;
 

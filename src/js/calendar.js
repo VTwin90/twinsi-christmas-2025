@@ -68,6 +68,27 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
+      case 'download':
+        content = `
+          <div class="gift-box-content" style="text-align:center; color:white;">
+            <div class="shiny-badge">
+              <img src="${gift.url}" alt="Participation Badge" class="bobbling-badge"
+                  style="width:160px; max-width:100%; max-height: 100%;" />
+            </div>
+            <p style="font-size:1.1rem; margin-bottom:1rem;">
+              🐾 Twinsi Bear welcomes you to the calendar!  
+              Here’s your badge for joining the adventure — wear it with pride.
+            </p>
+            <p style="font-size:1.1rem;">
+              ✨<a href="${gift.url}" download style="color:white; text-decoration:underline;">Download Your Badge</a>
+            </p>
+          </div>
+        `;
+        break;
+
+
+  
+
       case 'video':
         content = `
           <div class="gift-box-content">

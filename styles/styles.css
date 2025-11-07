@@ -992,3 +992,53 @@ body.low-effects .aurora-layer.secondary {
     right: 1em;
   }
 }
+
+@keyframes bobbleBadge {
+  0%   { transform: rotateZ(0deg); }
+  25%  { transform: rotateZ(2deg); }
+  50%  { transform: rotateZ(0deg); }
+  75%  { transform: rotateZ(-2deg); }
+  100% { transform: rotateZ(0deg); }
+}
+
+.bobbling-badge {
+  animation: bobbleBadge 3s ease-in-out infinite;
+}
+
+.shiny-badge {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  clip-path: polygon(17% 0, 83% 0, 99% 16%, 100% 83%, 83% 100%, 17% 100%, 0 83%, 0 17%);
+  overflow: hidden;
+}
+
+.shiny-badge img {
+  display: block;
+  width: 100%;
+  border-radius: 0; /* optional, since clip-path handles shape */
+}
+
+.shiny-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 160px; /* Match the badge width */
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+  transform: skewX(-20deg);
+  animation: shine 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+
+
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+
