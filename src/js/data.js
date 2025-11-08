@@ -44,7 +44,7 @@ export const gifts = [
   { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' }, // Dec 2
   { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' }, // Dec 3
   { type: 'compliment-challenge', text: 'Give someone a heartfelt compliment today — something that makes them feel truly seen.' }, // Dec 4
-  { type: 'christmas-game', url: 'https://yourgame.com/day2' },
+  { type: 'christmas-game', url: 'https://vtwin90.github.io/twinsi-cookie-catch/' },
   
   { type: 'image', url: 'https://yourcdn.com/images/day3.jpg' },
   { type: 'video', url: 'https://youtu.be/nc3UBeg13fg' },

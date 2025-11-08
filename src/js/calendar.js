@@ -124,22 +124,19 @@ export function createBox(day, now, currentYear, confettiCanvas) {
       case 'christmas-game':
       content = `
         <div class="gift-box-content" style="text-align:center; color:white; padding:1rem; max-width:500px; margin:0 auto;">
-          <p style="font-size:1.2rem; margin-bottom:1rem;">
-            🎄 Twinsi Bear’s Christmas Game!
-          </p>
-          <p style="font-size:1.1rem; margin-bottom:1rem;">
-            Ready for some festive fun?  
-            Twinsi has a little game for you — just click below to play!
-          </p>
+          <iframe
+            src="${gift.url}"
+            width="320"
+            height="480"
+            style="border: none; border-radius: 12px; box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);">
+          </iframe>
+
           <p style="font-size:1.1rem;">
             🎮 <a href="${gift.url}" target="_blank" style="color:white; text-decoration:underline;">Play the Christmas Game</a>
           </p>
         </div>
       `;
       break;
-
-
-  
 
       case 'video':
         content = `
