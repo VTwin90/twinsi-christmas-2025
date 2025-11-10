@@ -85,6 +85,24 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
       
+      case 'card':
+        content = `
+          <div class="gift-box-content">
+            <div class="bobbling-badge">
+              <img src="${gift.url}" alt="Christmas Card" />
+            </div>  
+            <p>
+              🐾 Twinsi Bear is wishing you a Merry Christmas —  
+              may it be full of laughter, love, and twinkling lights. 
+              Share this card with someone who makes your heart smile. 
+            </p>
+            <p>
+              ✨<a href="${gift.url}">Download Your Christmas Card</a>
+            </p>
+          </div>
+        `;
+        break;        
+
       case 'compliment-challenge':
         content = `
           <div class="gift-box-content">
@@ -102,24 +120,25 @@ export function createBox(day, now, currentYear, confettiCanvas) {
           </div>
         `;
         break;
-  
-      case 'card':
+
+      case 'baristalysvideo':
         content = `
           <div class="gift-box-content">
-            <div class="bobbling-badge">
-              <img src="${gift.url}" alt="Christmas Card" />
-            </div>  
-            <p>
-              🐾 Twinsi Bear is wishing you a Merry Christmas —  
-              may it be full of laughter, love, and twinkling lights. 
-              Share this card with someone who makes your heart smile. 
-            </p>
-            <p>
-              ✨<a href="${gift.url}">Download Your Christmas Card</a>
-            </p>
+            <a href="${gift.url}" target="_blank" class="delayed-link">
+              <img src="https://img.youtube.com/vi/nc3UBeg13fg/hqdefault.jpg" alt="Watch on YouTube" style="width:100%; border-radius:8px;" />
+              <p>✨ Watch the Video on YouTube</p>
+            </a>
           </div>
         `;
-        break;
+        break;    
+     
+      case 'poem1':
+        content = `
+          <div class="gift-box-content">
+              <img src="${gift.url}" alt="Christmas Poem" />
+          </div>
+        `;
+        break; 
 
       case 'christmas-game':
         const isMobile = window.innerWidth < 768;
@@ -157,50 +176,6 @@ export function createBox(day, now, currentYear, confettiCanvas) {
         `;
         break;
 
-      case 'poem1':
-        content = `
-          <div class="gift-box-content">
-              <img src="${gift.url}" alt="Christmas Poem" />
-          </div>
-        `;
-        break;    
-
-      case 'unperfectdate-game':
-        const viewonMobile = window.innerWidth < 768;
-
-        const dategameIntro = `
-          <p style="margin-bottom:1rem;">
-            🐾 Twinsi Bear has something a little quirky for you today —  
-            a not-so-perfect date game full of awkward moments, and unexpected joy.  
-            Choose your path and see where it leads!
-          </p>
-        `;
-
-        const dategameEmbed = viewonMobile
-          ? `${dategameIntro}
-            <a href="${gift.url}" target="_blank" class="calendar-link">
-              🎮 Play the (UN)Perfect Date Game
-            </a>`
-          : `<iframe
-              src="${gift.url}"
-              width="320"
-              height="480">
-            </iframe>`;
-
-        const datefullGameLink = viewonMobile
-          ? ''
-          : `<p>
-              🎮 <a href="${gift.url}" class="calendar-link" target="_blank">Open Full Game</a>
-            </p>`;
-
-        content = `
-          <div class="gift-box-content">
-            ${dategameEmbed}
-            ${datefullGameLink}
-          </div>
-        `;
-        break;        
-
       case 'tarot1':
         content = `
           <div class="gift-box-content">
@@ -213,19 +188,8 @@ export function createBox(day, now, currentYear, confettiCanvas) {
             </p>
           </div>
         `;
-        break; 
-
-      case 'baristalysvideo':
-        content = `
-          <div class="gift-box-content">
-            <a href="${gift.url}" target="_blank" class="delayed-link">
-              <img src="https://img.youtube.com/vi/nc3UBeg13fg/hqdefault.jpg" alt="Watch on YouTube" style="width:100%; border-radius:8px;" />
-              <p>✨ Watch the Video on YouTube</p>
-            </a>
-          </div>
-        `;
-        break;   
-
+        break;  
+  
       case 'card-challenge':
         content = `
           <div class="gift-box-content">
@@ -245,9 +209,262 @@ export function createBox(day, now, currentYear, confettiCanvas) {
             </p>
           </div>
         `;
+        break;    
+
+      case 'poem2':
+        content = `
+          <div class="gift-box-content">
+              <img src="${gift.url}" alt="Christmas Poem" />
+          </div>
+        `;
+        break; 
+
+      case 'encouragement1':
+        content = `
+          <div class="gift-box-content">
+            <p>🐾 Twinsi Bear’s Encouragement:</p>
+            <p>
+              You’ve carried things no one saw.  
+              You’ve shown up when it was hard.  
+              That’s strength — and it deserves to be honored.
+            </p>
+            <p>
+              Twinsi Bear sees your quiet courage.  
+              Let today be a moment of rest — you’ve earned it. 🐾
+            </p>
+          </div>
+        `;
+        break;
+     
+      case 'unperfectdate-game':
+        const viewonMobile = window.innerWidth < 768;
+
+        const dategameIntro = `
+          <p style="margin-bottom:1rem;">
+            🐾 Twinsi Bear has something a little quirky for you today —  
+            a not-so-perfect date game full of awkward moments, and unexpected joy.  
+            Choose your path and see where it leads!
+          </p>
+          <p>
+            P.S. Twinsi Bear heard it’s someone’s special day today…  
+            Happy Birthday, Marte! 🎂🐾
+          </p>
+        `;
+
+        const dategameEmbed = viewonMobile
+          ? `${dategameIntro}
+            <a href="${gift.url}" target="_blank" class="calendar-link">
+              🎮 Play the (UN)Perfect Date Game
+            </a>`
+          : `${dategameIntro}
+            <iframe
+              src="${gift.url}"
+              width="320"
+              height="480">
+            </iframe>`;
+
+        const datefullGameLink = viewonMobile
+          ? ''
+          : `<p>
+              🎮 <a href="${gift.url}" class="calendar-link" target="_blank">Open Full Game</a>
+            </p>`;
+
+        content = `
+          <div class="gift-box-content">
+            ${dategameEmbed}
+            ${datefullGameLink}
+          </div>
+        `;
         break;
 
+      case 'drawing-challenge':
+        content = `
+          <div class="gift-box-content">
+            <p>🎨 Twinsi Bear’s Drawing Challenge:</p>
+            <p>
+              Today’s gift is a moment of reflection —  
+              draw a winter scene or memory that lives in your heart.
+            </p>
+            <p>
+              It could be snowflakes on a window, a walk in the woods,  
+              a cozy cup of cocoa, or a moment you’ve never forgotten.
+            </p>
+            <p>
+              Let your pencil follow the feeling.  
+              Twinsi Bear will be right here, sketching beside you. 🐾
+            </p>
+          </div>
+        `;
+        break;      
+
+      case 'poem3':
+        content = `
+          <div class="gift-box-content">
+              <img src="${gift.url}" alt="Christmas Poem" />
+          </div>
+        `;
+        break;       
+
+      case 'tarot2':
+        content = `
+          <div class="gift-box-content">
+            <p>
+              🐾 Twinsi Bear has invited Annette to draw the cards today.  
+              Let’s see what they reveal…
+            </p>
+            <p>
+              ✨ <a href="https://youtu.be/nc3UBeg13fg" target="_blank" class="calendar-link">Watch the Reading</a>
+            </p>
+          </div>
+        `;
+        break;      
+
+      case 'encouragement2':
+        content = `
+          <div class="gift-box-content">
+            <p>🐾 Twinsi Bear’s Encouragement:</p>
+            <p>
+              The holidays can be loud.  
+              If you need quiet, take it.  
+              If you feel heavy, that’s okay.  
+              You’re allowed to be real.
+            </p>
+            <p>
+              Twinsi Bear says: You don’t have to sparkle every day.  
+              You’re still loved. You’re still magic. 🐾
+            </p>
+          </div>
+        `;
+        break;
       
+      case 'takeawalk-challenge':
+        content = `
+          <div class="gift-box-content">
+            <p>🐾 Twinsi Bear’s Take-a-Walk Challenge:</p>
+            <p>
+              Today’s gift is a walk — just a short one.  
+              Step outside, or down the hall, or around the block.
+            </p>
+            <p>
+              While you walk, look for one beautiful thing.  
+              A frosty window, a dog wagging its tail, a patch of sunlight, a kind smile.
+            </p>
+            <p>
+              You don’t have to go far.  
+              Just far enough to notice something good.
+            </p>
+            <p>
+              Twinsi Bear will be walking too — scarf on, nose in the air, looking for beauty. 🐾
+            </p>
+          </div>
+        `;
+        break;
+
+      case 'magikerenogmånenvideo':
+        content = `
+          <div class="gift-box-content">
+            <a href="${gift.url}" target="_blank" class="delayed-link">
+              <img src="https://img.youtube.com/vi/5p37EXWx2hY/hqdefault.jpg" alt="Watch on YouTube" style="width:100%; border-radius:8px;" />
+              <p>✨ Watch the Video on YouTube</p>
+            </a>
+          </div>
+        `;
+        break; 
+
+      case 'poem4':
+        content = `
+          <div class="gift-box-content">
+              <img src="${gift.url}" alt="Christmas Poem" />
+          </div>
+        `;
+        break;     
+
+      case 'encouragement3':
+        content = `
+          <div class="gift-box-content">
+            <p>🐾 Twinsi Bear’s Encouragement:</p>
+            <p>
+              You may not know it,  
+              but someone feels calmer when you’re near.  
+              You bring warmth. You bring safety.
+            </p>
+            <p>
+              Twinsi Bear wants you to know:  
+              You are someone’s safe place. That’s a gift. 🐾
+            </p>
+          </div>
+        `;
+        break;
+
+      case 'reachout-challenge':
+        content = `
+          <div class="gift-box-content">
+            <p>🐾 Twinsi Bear’s Reach-Out Challenge:</p>
+            <p>
+              Today’s gift is connection.  
+              Reach out to someone you miss — with a message, a photo, or just a “thinking of you.”
+            </p>
+            <p>
+              You don’t have to say everything.  
+              Just enough to remind them: you’re still here, and they still matter.
+            </p>
+            <p>
+              Twinsi Bear knows it can feel vulnerable.  
+              But sometimes, a small hello opens a big door. 🐾
+            </p>
+          </div>
+        `;
+        break;
+
+      case 'tarot3':
+        content = `
+          <div class="gift-box-content">
+            <p>
+              🐾 Twinsi Bear has invited Annette to draw the cards today.  
+              Let’s see what they reveal…
+            </p>
+            <p>
+              ✨ <a href="https://youtu.be/nc3UBeg13fg" target="_blank" class="calendar-link">Watch the Reading</a>
+            </p>
+          </div>
+        `;
+        break;   
+
+      case 'ottherlyvideo':
+        content = `
+          <div class="gift-box-content">
+            <a href="${gift.url}" target="_blank" class="delayed-link">
+              <img src="https://img.youtube.com/vi/zLyvomM4IlY/hqdefault.jpg" alt="Watch on YouTube" style="width:100%; border-radius:8px;" />
+              <p>✨ Watch the Video on YouTube</p>
+            </a>
+          </div>
+        `;
+        break; 
+
+      case 'bookgift':
+        content = `
+         <div class="gift-box-content">
+          <p>🐾 Twinsi Bear’s Final Gift:</p>
+          <p>
+            Today, something special is waiting for you —  
+            <strong>Bear & Rabbit: A Fable About Healing and Boundaries</strong>  
+            is free on <strong>Kindle</strong> for the next 5 days.
+          </p>
+          <p>
+            This is a heart-led fable about emotional healing, relational repair, and the power of boundaries.  
+            It placed <strong>4th in the Hay House writing competition 2025</strong>.
+          </p>
+          <img src="https://m.media-amazon.com/images/I/71-afjTgIJL._SL1500_.jpg" alt="Bear & Rabbit book cover" style="width:40%; max-width:400px;" />
+          <p>
+            ✨ <a href="https://www.amazon.com/dp/B0FLF7PN6M" target="_blank" class="calendar-link">Open the Gift</a>
+          </p>
+          <p>
+            Twinsi Bear hopes it finds you at just the right time.  
+            Merry Christmas, dear friend. 🐾
+          </p>
+        </div>
+        `;
+        break;         
     }
 
     const modal = document.querySelector('.gift-modal');

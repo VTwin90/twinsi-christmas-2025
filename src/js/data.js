@@ -44,27 +44,25 @@ export const gifts = [
   { type: 'badge', url: 'assets/gifts/twinsi_participation_badge2025.png' }, // Dec 2
   { type: 'card', url: 'assets/gifts/twinsi_christmas_card.png' }, // Dec 3
   { type: 'compliment-challenge', text: 'Give someone a heartfelt compliment today — something that makes them feel truly seen.' }, // Dec 4
-  { type: 'christmas-game', url: 'https://vtwin90.github.io/twinsi-cookie-catch/' },  // Dec 5
-  
+  { type: 'baristalysvideo', url: 'https://youtu.be/nc3UBeg13fg' }, // Dec 5
   { type: 'poem1', url: 'assets/gifts/twinsi_participation_badge2025.png' },  // Dec 6
-  { type: 'unperfectdate-game', url: 'https://vtwin90.github.io/UN-PERFECT-DATE/' },  // Dec 7
+  { type: 'christmas-game', url: 'https://vtwin90.github.io/twinsi-cookie-catch/' }, // Dec 7 
   { type: 'tarot1', url: 'https://youtu.be/nc3UBeg13fg' },  // Dec 8
-  { type: 'baristalysvideo', url: 'https://youtu.be/nc3UBeg13fg' },  // Dec 9
-  { type: 'card-challenge', text: 'Send a Christmas card to someone who wouldn’t expect it.' }, // Dec 10
-  
-  { type: 'download', url: 'https://yourcdn.com/cards/day4.pdf' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'tarot2', url: 'https://youtu.be/nc3UBeg13fg' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'tarot3', url: 'https://youtu.be/nc3UBeg13fg' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
-  { type: 'game', url: 'https://yourgame.com/day2' },
+  { type: 'card-challenge', text: 'Send a Christmas card to someone who wouldn’t expect it.' },  // Dec 9
+  { type: 'poem2', url: 'assets/gifts/twinsi_participation_badge2025.png' },  // Dec 10
+  { type: 'encouragement1', text: '' },  // Dec 11
+  { type: 'unperfectdate-game', url: 'https://vtwin90.github.io/UN-PERFECT-DATE/' },  // Dec 12 
+  { type: 'drawing-challenge', text: '' },  // Dec 13
+  { type: 'poem3', url: 'assets/gifts/twinsi_participation_badge2025.png' },  // Dec 14
+  { type: 'tarot2', url: 'https://youtu.be/nc3UBeg13fg' },  // Dec 15
+  { type: 'encouragement2', text: '' },  // Dec 16
+  { type: 'takeawalk-challenge', text: '' },  // Dec 17
+  { type: 'magikerenogmånenvideo', url: 'https://youtu.be/5p37EXWx2hY' }, // Dec 18
+  { type: 'poem4', url: 'assets/gifts/twinsi_participation_badge2025.png' },  // Dec 19
+  { type: 'encouragement3', text: '' },  // Dec 20
+  { type: 'reachout-challenge', text: '' },  // Dec 21
+  { type: 'tarot3', url: 'https://youtu.be/nc3UBeg13fg' },  // Dec 22
+  { type: 'ottherlyvideo', url: 'https://youtu.be/zLyvomM4IlY' }, // Dec 23
+  { type: 'bookgift', url: 'https://www.amazon.com/dp/B0FLF7PN6M' }, // Dec 24
   // Add up to 24 gifts
 ];
