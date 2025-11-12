@@ -131,8 +131,9 @@ xdg-open index.html
 
 ```
 <br>
+
 <a id="testing"></a> 
-## ✅ Testing 
+## ✅ Testing
 
 This project includes a full Playwright test suite to ensure layout, visuals, interactivity, and game logic work across browsers and devices. 
 
@@ -160,9 +161,11 @@ npm run test:visuals
 npm run test:game 
 ``` 
 
-### Manual Testing In addition to automated tests, the project was manually verified using Chrome DevTools device emulation. 
+### Manual Testing 
+In addition to automated tests, the project was manually verified using Chrome DevTools. 
 
-### CI Integration Tests are automatically run via GitHub Actions. Artifacts such as screenshots and trace files are generated and stored locally (excluded from the repo via `.gitignore`).
+### CI Integration 
+Tests are automatically run via GitHub Actions. Artifacts such as screenshots and trace files are generated and stored locally (excluded from the repo via `.gitignore`).
 
 <br>
 
