@@ -22,7 +22,7 @@ renderStars(starContainer);
 renderSnowflakes(snowContainer);
 
 const currentYear = new Date().getFullYear();
-const now = new Date(currentYear, 11, 23, 23, 59); // Dec 23, 23:59 Change for testing
+const now = new Date(); //Change for testing
 
 // Initial render
 document.querySelector('.advent-calendar').innerHTML = '';
