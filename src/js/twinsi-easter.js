@@ -24,7 +24,7 @@ console.log(
 // 🎉 Secret Unlock Logic
 window.twinsi = {
   unlock: function (phrase) {
-    const secretPhrase = "I swear I am up to no good";
+    const secretPhrase = "I solemnly swear that I am up to no good";
     if (phrase.trim().toLowerCase() === secretPhrase.toLowerCase()) {
       // ⏳ Countdown animation
       const countdown = [
